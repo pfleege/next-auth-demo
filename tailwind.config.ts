@@ -9,6 +9,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        roboto: ["var(--font-roboto)"],
         rubicGlitch: ["var(--font-rubik-glitch)"],
         specialElite: ["var(--font-special-elite)"],
       },
