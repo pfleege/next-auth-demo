@@ -3,6 +3,7 @@ import { Geist, Roboto, Rubik_Glitch, Special_Elite } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footnote from "./components/Footnote";
+import Footer from "./components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -46,6 +47,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footnote />
+        <Footer />
       </body>
     </html>
   );
