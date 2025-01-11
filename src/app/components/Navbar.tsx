@@ -67,7 +67,7 @@ export default function Navbar() {
                 : "text-neutral-400 hover:text-orange-400"
             }
           >
-            Sign In
+            Log In
           </Link>
         </li>
         <li>
@@ -79,7 +79,7 @@ export default function Navbar() {
                 : "text-neutral-400 hover:text-orange-400"
             }
           >
-            Sign Out
+            Log Out
           </Link>
         </li>
       </ul>
