@@ -25,8 +25,8 @@ export default function Navbar() {
             width={300}
             height={50}
           />
-          <h2 className="ml-5 mt-2 text-2xl text text-white font-bold font-roboto tracking-wider">
-            NextAuth.js
+          <h2 className="ml-5 mt-2 text-xl text text-white font-bold font-roboto tracking-wider">
+            NextAuth.js - Demo
           </h2>
           <p className="ml-5 text-[12px] text-white font-roboto">
             Authentication for Next.js
