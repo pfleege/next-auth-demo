@@ -23,6 +23,7 @@ export default {
         imgShadowOrange: "0px 0px 40px 10px rgba(234, 88, 12, 0.9)",
         imgShadowYellow: "0px 0px 40px 10px rgba(250, 204, 21, 0.9)",
         imgShadowGreen: "0px 0px 40px 10px rgba(34, 197, 94, 0.9)",
+        videoShadowBlue: "-15px -10px 40px 20px rgba(29, 78, 216, 0.9)",
       },
     },
   },
