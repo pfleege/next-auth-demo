@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="relative flex h-[250px] bg-top bg-[url('/navBg.jpg')]">
+    <div className="relative w-full flex h-[250px] bg-top bg-[url('/navBg.jpg')]">
       <div className="flex m-[50px] w-[200px] gap-5 z-10">
         <div>
           <video
