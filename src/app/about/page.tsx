@@ -12,7 +12,7 @@ const About = () => {
   });
 
   return (
-    <>
+    <div className="bg-cover bg-center bg-[url('/aboutBg.jpg')]">
       <motion.div
         id="scroll-indicator"
         className="fixed bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-fuchsia-600 from-10% via-blue-500 via-30% to-orange-600 to-90%"
@@ -21,7 +21,7 @@ const About = () => {
         }}
       />
       <AboutContent />
-    </>
+    </div>
   );
 };
 
