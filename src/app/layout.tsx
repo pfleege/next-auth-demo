@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Roboto, Rubik_Glitch, Special_Elite } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
 import Footnote from "./components/Footnote";
 
 const geistSans = Geist({
@@ -43,7 +42,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${roboto.variable} ${rubicGlitch.variable} ${specialElite.variable} antialiased`}
       >
-        <Navbar />
         {children}
         <Footnote />
       </body>
