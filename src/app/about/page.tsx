@@ -1,28 +1,20 @@
-"use client";
+import { options } from "../api/auth/[...nextauth]/options";
+import { getServerSession } from "next-auth/next";
+import AboutLoggedIn from "../components/AboutLoggedIn";
 
-import { motion, useSpring, useScroll } from "motion/react";
-import AboutContent from "../components/AboutContent";
-
-const About = () => {
-  const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001,
-  });
-
+export default async function Home() {
+  const session = await getServerSession(options);
   return (
-    <div className="bg-cover bg-center bg-[url('/aboutBg.jpg')]">
-      <motion.div
-        id="scroll-indicator"
-        className="fixed bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-fuchsia-600 from-10% via-blue-500 via-30% to-orange-600 to-90%"
-        style={{
-          scaleX,
-        }}
-      />
-      <AboutContent />
-    </div>
+    <>
+      {session ? (
+        <AboutLoggedIn />
+      ) : (
+        <div className="flex flex-col items-center font-specialElite text-4xl text-center bg-gradient-to-b from-indigo-900 from-10% via-sky-500 via-30% to-fuchsia-950 to-90%">
+          <h1 className="text-5xl text-white">
+            Please log in to view more content.
+          </h1>
+        </div>
+      )}
+    </>
   );
-};
-
-export default About;
+}
