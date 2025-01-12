@@ -4,6 +4,12 @@ import GitHubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
 
 export const options: NextAuthOptions = {
+  theme: {
+    colorScheme: "dark", // "auto" | "dark" | "light"
+    brandColor: "", // Hex color code
+    logo: "/signInLogo.png", // Absolute URL to image
+    buttonText: "", // Hex color code
+  },
   providers: [
     CredentialsProvider({
       name: "Credentials",
