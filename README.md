@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NextAuth Demo - Next.js/React/TypeScript/Tailwind
 
-## Getting Started
+![](./public/nextAuthDemo.png)
 
-First, run the development server:
+<p align="center">
+  NextAuth Demo by <a href="https://iceeqsolutions.fi/">iCeeqSolutions</a>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## About
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The NextAuth demo is a brief introductory project on how NextAuth works and how it can be used in larger projects to restrict unauthorized users from accessing information on specific pages. NextAuth includes OAuth and can be used with multiple providers such as GitHub, GitLab, Facebook and Google. In this demo we've included GitHub and Google. In addition to this, you can naturally connect NextAuth with a database and acquire the credentials from there to verify that the user is authorized. We did not include the database in this mini project - instead we hard-coded the user credentials so that this part can be tested as well.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To test out the demo, you can thus either use the test credentials "testuser/nextauth", or use OAuth and sign in via your GitHub or Google account.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+For styling, we've used Tailwind where we added some custom configurations in the tailwind.config.ts file.
 
-## Learn More
+## Demo
 
-To learn more about Next.js, take a look at the following resources:
+👁️ [Live Demo](https://next-auth-demo-swart.vercel.app/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Built with
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Next.js
+- NextAuth
+- TypeScript
+- React
+- Tailwind
+- Prettier
 
-## Deploy on Vercel
+## Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Authentication
+- OAuth
+- Tailwind custom config
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<br/><br/>
+
+<p align="center"><a href="https://iceeqsolutions.fi/"><img height="61px" width="300px" src="./public/iCS_Logo_Light.png"></a></p>
+<br/><br/>
