@@ -16,7 +16,7 @@ export default async function Home() {
           </div>
         ) : (
           <>
-            <h1 className="text-5xl text-white">
+            <h1 className="pt-2 text-5xl text-white">
               Please log in to view more content.
             </h1>
             <Footer />

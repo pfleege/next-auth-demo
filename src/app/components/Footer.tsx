@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
         <div>
           <video
-            className="size-[75px] m-1 rounded-full shadow-imgShadowBlue overflow-hidden object-cover brightness-50 absolute"
+            className="size-[75px] m-[6px] rounded-full shadow-imgShadowBlue overflow-hidden object-cover brightness-50 absolute"
             src={"/bgVideo.mp4"}
             autoPlay
             muted
@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
         <div>
           <video
-            className="size-[30px] m-1 rounded-full shadow-imgShadowBlue overflow-hidden object-cover brightness-50 absolute"
+            className="size-[30px] m-[6px] rounded-full shadow-imgShadowBlue overflow-hidden object-cover brightness-50 absolute"
             src={"/bgVideo.mp4"}
             autoPlay
             muted
@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
       </div>
       <Image
-        className="absolute w-[80vw] left-40"
+        className="absolute top-5 md:top-0 w-[65vw] sm:w-[70vw] md:w-[75vw] max-w-[960px] left-40"
         src="/lightning.png"
         alt="NextAuth logo"
         width={1280}

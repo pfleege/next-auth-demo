@@ -13,7 +13,7 @@ export default async function Home() {
         <AboutLoggedIn />
       ) : (
         <div className="flex flex-col items-center font-specialElite text-4xl text-center bg-gradient-to-b from-indigo-900 from-10% via-sky-500 via-30% to-fuchsia-950 to-90%">
-          <h1 className="text-5xl text-white">
+          <h1 className="pt-2 text-5xl text-white">
             Please log in to view more content.
           </h1>
           <Footer />

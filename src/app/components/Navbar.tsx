@@ -33,14 +33,14 @@ export default function Navbar() {
           </p>
         </div>
       </div>
-      <ul className="flex h-[100px] w-full items-center justify-evenly text-4xl font-rubicGlitch bg-violet-900 bg-opacity-50">
+      <ul className="flex mb-5 h-[100px] w-full items-center justify-evenly text-4xl font-rubicGlitch bg-violet-900 bg-opacity-50">
         <li>
           <Link
             href="/"
             className={
               pathname === "/"
-                ? "text-blue-600 py-1 px-3 border-y-4 border-blue-700"
-                : "text-neutral-400 hover:text-orange-400"
+                ? "text-blue-600 py-1 px-3 border-y-4 border-blue-700 text-2xl sm:text-3xl md:text-4xl"
+                : "text-neutral-400 hover:text-orange-400 text-2xl sm:text-3xl md:text-4xl"
             }
           >
             Home
@@ -51,8 +51,8 @@ export default function Navbar() {
             href="/about"
             className={
               pathname === "/about"
-                ? "text-blue-400 py-1 px-3 border-y-4 border-blue-700"
-                : "text-neutral-400 hover:text-orange-400"
+                ? "text-blue-600 py-1 px-3 border-y-4 border-blue-700 text-2xl sm:text-3xl md:text-4xl"
+                : "text-neutral-400 hover:text-orange-400 text-2xl sm:text-3xl md:text-4xl"
             }
           >
             About
@@ -63,8 +63,8 @@ export default function Navbar() {
             href="/api/auth/signin"
             className={
               pathname === "/api/auth/signin"
-                ? "text-blue-600 py-1 px-3 border-y-4 border-blue-700"
-                : "text-neutral-400 hover:text-orange-400"
+                ? "text-blue-600 py-1 px-3 border-y-4 border-blue-700 text-2xl sm:text-3xl md:text-4xl"
+                : "text-neutral-400 hover:text-orange-400 text-2xl sm:text-3xl md:text-4xl"
             }
           >
             Log In
@@ -75,8 +75,8 @@ export default function Navbar() {
             href="/api/auth/signout"
             className={
               pathname === "/api/auth/signout"
-                ? "text-blue-600 py-1 px-3 border-y-4 border-blue-700"
-                : "text-neutral-400 hover:text-orange-400"
+                ? "text-blue-600 py-1 px-3 border-y-4 border-blue-700 text-2xl sm:text-3xl md:text-4xl"
+                : "text-neutral-400 hover:text-orange-400 text-2xl sm:text-3xl md:text-4xl"
             }
           >
             Log Out
